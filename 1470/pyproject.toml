@@ -1,0 +1,24 @@
+[project]
+name = "pkg"
+version = "0.2.0"
+description = "Reproduction for PR1470"
+authors = [
+    {name = "Tom Solberg", email = "me@sbg.dev"},
+]
+dependencies = [
+
+]
+
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+[project.optional-dependencies]
+foobar = ["pyyaml"]
+ci = ["pkg[foobar]"]
+
+
+[tool.pdm]
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
