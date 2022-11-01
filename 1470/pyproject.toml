@@ -9,12 +9,13 @@ dependencies = [
 
 ]
 
-requires-python = ">=3.9"
+requires-python = ">=3.8"
 license = {text = "MIT"}
 
 [project.optional-dependencies]
 foobar = ["pyyaml"]
-ci = ["pkg[foobar]"]
+qux = ["pkg[foobar]"]
+ci = ["pkg[qux]"]
 
 
 [tool.pdm]

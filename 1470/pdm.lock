@@ -1,21 +1,4 @@
 [[package]]
-name = "pkg"
-version = "0.1.0"
-requires_python = ">=3.9"
-summary = "Reproduction for PR1470"
-
-[[package]]
-name = "pkg"
-version = "0.1.0"
-extras = ["foobar"]
-requires_python = ">=3.9"
-summary = "Reproduction for PR1470"
-dependencies = [
-    "pkg==0.1.0",
-    "pyyaml",
-]
-
-[[package]]
 name = "pyyaml"
 version = "6.0"
 requires_python = ">=3.6"
@@ -23,7 +6,7 @@ summary = "YAML parser and emitter for Python"
 
 [metadata]
 lock_version = "4.0"
-content_hash = "sha256:8ba8f320fe164459d807d4ef79af0883c66453e656b81576ba6924afebeda55f"
+content_hash = "sha256:a2ac5c63c9da3938e8b7e5ce4a36f87d4a25d3108d86d952aed00720e70a0220"
 
 [metadata.files]
 "pyyaml 6.0" = [
